@@ -136,6 +136,7 @@ Router.route('/image/:_id', function() {
             createdBy: Meteor.user()._id
           })
       }
+       $("#image_add_form").modal('hide');
       return false;
     }
   })
